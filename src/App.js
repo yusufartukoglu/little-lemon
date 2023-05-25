@@ -1,12 +1,19 @@
-import "./App.css";
 import Header from "./components/Header";
-// import Nav from "./components/Nav"
-// import Main from "./components/Main"
-// import Footer from "./components/Footer"
+import Footer from "./components/Footer";
+import Homepage from "./pages/Homepage";
+import "./App.css";
 import { Route, Routes } from "react-router-dom";
 
 function App() {
-  return;
+  return (
+    <>
+      <Header />
+      <Routes>
+         <Route path="/" exact element={<Homepage />}></Route>
+      </Routes>
+      <Footer />
+    </>
+  );
 }
 
 export default App;
