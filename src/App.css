@@ -396,6 +396,7 @@ select {
   height: auto;
   padding: 3em 0;
   width: 100%;
+  margin-left: 22em;
 }
 
 .about-content {
@@ -404,9 +405,15 @@ select {
   width: 40%;
 }
 
+.desc-pharagraph {
+  max-width: 70%;
+}
+
+
 .owners {
   width: 50%;
   display: block;
+  margin-right: 20em;
 }
 
 .chefs, 
