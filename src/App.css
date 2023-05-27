@@ -1,38 +1,327 @@
-.App{
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+
+/*Typo*/
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+.form-desc {
+  text-align: center;
+  padding: 2em 1em;
+}
+
+label {
+  font-family: 'Markazi', sans-serif;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0em;
+}
+
+.title {
+  font-family: 'Markazi Text' serif;
+  font-size: 64px;
+  font-weight: 500;
+  line-height: 77px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #F4CE14;
+  margin: 0;
+}
+
+.subtitle {
+  font-family: 'Markazi Text' serif;
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 48.01px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #FFFFFF;
+  margin: 0;
+}
+
+.desc {
+  color: #FFFFFF;
+  font-family: 'Karla', sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.menu-title {
+  color: #000000;
+}
+
+.nav-item {
+  color: #040404;
+  font-weight: 600;
+  text-decoration: inherit;
+  font-family: 'Markazi', sans-serif;
+}
+
+.item-name,
+.reviewer-name {
+  font-family: 'Markazi', sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 22px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.confirmed-title {
+  text-align: center;
+}
+
+.confirmed-subtitle {
+  color: #000000;
+  text-align: center;
+  max-width: 600px;
+  width: 50%;
+}
+
+.item-price,
+.reviewer-rating {
+  font-family: Karla;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #EE9972;
+}
+
+.item-desc,
+.review-text {
+  font-family: 'Karla', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #495E57;
+  padding-bottom: 2em;
+}
+
+.delivery {
+  font-family: 'Karla', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px;
+  letter-spacing: 0em;
+  text-align: left;
+  position: absolute;
+  bottom: 0.6em;
+}
+
+.testimonials-title {
+  font-family: 'Markazi Text', serif;
+  font-size: 36px;
+  font-weight: 500;
+  line-height: 43px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #333333;
+}
+
+.desc-title {
+  color: #000000;
+}
+
+.desc-subtitle {
+  color: #333333;
+}
+
+.desc-text {
+  font-family: Karla;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 23px;
+  letter-spacing: 0em;
+  text-align: justified;
+  color: #000000;
+}
+
+footer {
+  font-family: 'Karla', sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 26px;
+  letter-spacing: 0em;
+  text-align: left;
+  background-color: #EDEFEE;
+}
+
+/*Layout*/
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4em;
+  width: 100%;
+  height: 4em;
+  background-color: #EDEFEE;
+}
+
+nav {
+  display: flex;
+  gap: 1em;
+  position: relative;
+}
+
+.mobile-nav {
+  display: none;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+main {
   display: flex;
   flex-direction: column;
-  font-family: OpenSans,Arial,sans-serif;
-  font-size:1.1em;
-  align-items: center;
-  margin-bottom: 2em
-  
+  width: 100vw;
 }
 
-nav{
-  display:flex;
-  flex-direction:row;
-  align-items: center;
-  flex-wrap: wrap;
+.footer-item {
+  color: #040404;
+  font-weight: 400;
+  text-decoration: inherit;
+  font-size: 18px;
+}
+
+form {
+  background-color: #FAECDC;
+  width: 65%;
+  margin-inline: auto;
+  text-align: center;
+  padding: 2em 1em;
+  margin-bottom: 1.5em;
+  border-radius: 20px;
+}
+
+.seperate {
+  display: block;
+  margin-top: 1em;
+}
+
+.seperate-child {
+  display: inline-block;
+}
+
+.submit {
+  margin-top: 1.5em;
+  padding: 1em 1.5em;
+  cursor: pointer;
+}
+
+input[type="date"],
+input[type="text"],
+input[type="number"],
+select {
+  color: #333333;
+  background-color: #F7F7F7;
+  border: 2px solid #CCC;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 16px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  margin-inline: 0.5em;
+}
+
+.hero {
+  background-color: #495E57;
+}
+
+.img-wrapper {
+  right: 2em;
+  max-width: 250px;
+  min-height: 275px;
+  align-self: flex-end;
+  margin-bottom: -1em;
+  flex-basis: 1;
+}
+
+.hero-img {
   width: 100%;
-  justify-content: center
-  
-}
-header{
-  width: -webkit-fill-available;
-  position: fixed;
-  background:white
 }
 
-.topLogo{
-      margin-right: 5em;
-      height:3.5em
+.hero-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
 }
 
-nav a{
-  text-decoration: none;
-  color: black;
-  font-size:1.1em;
-  font-weight: 600;
-  margin:1em;
-  display: inline-block
+.hero-desct,
+.restaurant-desc {
+  width: 34%;
+  padding: 2em;
+  flex-basis: 1;
+}
+
+.menu {
+  padding-block: 2em;
+}
+
+.menu-desc {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+  margin-bottom: 2em;
+}
+
+.menu-img,
+.reviewer-img {
+  width: 100%;
+}
+
+.menu-img {
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+
+.cards,
+.testimonial {
+  width: 250px;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+  padding-bottom: 1em;
+}
+
+.card {
+  background-color: #EDEFEE;
+  border-radius: 16px;
+  position: relative;
+}
+
+.name-price,
+.name-rating {
+  display: flex;
+  justify-content: space-between;
+}
+
+.confirmed-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2em;
+  padding-block: 2em;
 }
