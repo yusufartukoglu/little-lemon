@@ -402,10 +402,6 @@ select {
   margin-left: 7em;
   margin-right: 5em;
   width: 40%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 2em;
 }
 
 .owners {

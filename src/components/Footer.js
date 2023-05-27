@@ -18,7 +18,7 @@ const Footer = () => {
           <a href="#" className="footer-item">
             Menu
           </a>
-          <Link to="/booking">Reservations</Link>
+          <Link to="/booking" className="reserve">Reservations</Link>
           <a href="#" className="footer-item">
             Order Online
           </a>
